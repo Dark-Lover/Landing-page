@@ -1,0 +1,229 @@
+:root {
+  --primary-g: hsl(171, 66%, 44%);
+  --primary-b: hsl(233, 100%, 69%);
+  --neutral-1: hsl(210, 10%, 33%);
+  --neutral-2: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree";
+  line-height: 1.4;
+}
+
+.height {
+  height: 350px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header*/
+
+#container {
+  top:0;
+  left: 0;
+}
+
+header{
+  background: url(/images/bg-header-desktop.png) center center/cover no-repeat;
+}
+
+.screen {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.heading {
+  font-size: 35px;
+  color: var(--neutral-1);
+}
+
+.lead {
+  font-size: 0.8rem;
+  color: var(--neutral-2);
+  line-height: 1.6;
+}
+
+.btn {
+  width: 200px;
+  padding: 10px 25px;
+  border: none;
+  margin: 0px 10px;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  box-shadow: #ccc 2px 5px 10px;
+  font-weight: 600;
+  transition: ease 0.2s;
+}
+
+.btn-green {
+  background-color: var(--primary-g);
+}
+
+.btn-blue {
+  background-color: var(--primary-b);
+}
+
+.btn-green:hover {
+  box-shadow: var(--primary-g) 2px 5px 10px;
+}
+
+.btn-blue:hover {
+  box-shadow: var(--primary-b) 2px 5px 10px;
+}
+
+/*Track section*/
+
+.track {
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "desc desc desc"
+    "img img left-desc";
+  gap: 20px;
+}
+
+.desc {
+  grid-area: desc;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.desc h2 {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: var(--neutral-1);
+}
+
+.img {
+  grid-area: img;
+  margin: auto;
+  width: 70%;
+}
+
+.left-desc {
+  grid-area: left-desc;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 40px;
+}
+
+.small-desc {
+  width: 90%;
+}
+
+.small-desc h3,
+h4 {
+  color: var(--neutral-1);
+}
+
+/*Supercharge*/
+
+.supercharge {
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 60px;
+  padding: 20px 40px;
+}
+
+.img-box {
+  height: 47px;
+}
+.items .img-box img {
+  width: 30px;
+  padding-bottom: 15px;
+}
+
+/*Clients*/
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding: 80px 20px;
+}
+
+.clients img {
+  width: 140px;
+  height: 40px;
+}
+
+/*ClipBoard*/
+
+/*Footer*/
+
+.my_footer {
+  margin: 100px 0px 0px 0px;
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  align-items: center;
+  gap: 20px;
+  background-color: #f8f8f8;
+}
+
+.my_footer .logo {
+  width: 50px;
+  height: 50px;
+}
+.my_footer .logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.my_footer .links {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.my_footer .links a {
+  color: var(--neutral-1);
+  padding: 20px 30px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.my_footer .links a:hover {
+  color: var(--primary-g);
+}
+
+.my_footer .social i {
+   font-size: 25px;
+   padding: 0px 5px;
+   cursor: pointer;
+}
+
+.my_footer .social i:hover {
+    color: var(--primary-g);
+ }
